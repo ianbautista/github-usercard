@@ -125,3 +125,7 @@ body {
 
 
 
+.card .calendar {
+  width: 500px;
+  min-height: 100px;
+}
