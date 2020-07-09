@@ -113,6 +113,13 @@ function cardMaker(info) {
 	cardInfo.appendChild(cardInfoFollowing);
 	cardInfo.appendChild(cardInfoBio);
 
+	// Stretch
+	// adding chart inside the card
+	const chart = document.createElement("img");
+	chart.setAttribute("src", `http://ghchart.rshah.org/${info.data.login}`);
+	chart.classList.add("calendar");
+	card.appendChild(chart);
+
 	return card;
 }
 
@@ -202,7 +209,6 @@ const followersArray = [
 	"https://api.github.com/users/dustinmyers",
 	"https://api.github.com/users/justsml",
 	"https://api.github.com/users/luishrd",
-	"https://api.github.com/users/bigknell",
 	"https://api.github.com/users/uniloki",
 ];
 
