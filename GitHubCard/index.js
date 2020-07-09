@@ -118,7 +118,7 @@ function cardMaker(info) {
 	const chart = document.createElement("img");
 	chart.setAttribute("src", `http://ghchart.rshah.org/${info.data.login}`);
 	chart.classList.add("calendar");
-	card.appendChild(chart);
+	cardInfo.appendChild(chart);
 
 	return card;
 }
